@@ -1,0 +1,75 @@
+$primary-color:#357b70;
+$primary-color-lighter: lighten($primary-color, 20%);
+$primary-color-darker: darken($primary-color, 20%);
+$secondary-color:#4f9d92;
+$primary-text-color:#fff;
+$secondary-text-color:#000;
+
+.box__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  font-family: sans-serif;
+  :hover{
+    box-shadow: none;
+  }
+}
+
+%button-shared {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  color: $primary-text-color;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  transition: 0.2s opacity;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.box-primary{
+    @extend %box-shared !optional;
+    background-color: $primary-color;
+}
+
+  .box-primary-lighter{
+    @extend %box-shared !optional;
+    background-color: $primary-color-lighter;
+}
+
+  .box-primary-darker{
+    @extend %box-shared !optional;
+    background-color: $primary-color-darker;
+}
+
+  .box-secondary{
+    @extend %box-shared !optional;
+    background-color: $secondary-color;
+    color: $secondary-text-color;
+}
+
+.box-primary {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 3px 19px 0px rgba (0,0,0,0.3);
+}
+
+.box-primary-lighter {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 3px 19px 0px rgba(0,0,0,0.3);
+  
+}
+
+.box-primary-darker {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 3px 19px 0px rgba(0,0,0,0.3);
+}
+
+.box-secondary {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 3px 19px 0px rgba(0,0,0,0.3);
+}
