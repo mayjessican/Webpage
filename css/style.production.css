@@ -6,7 +6,7 @@
   --grid-color: lightblue;
   --font-weight: 700px;
   --body-font-weight: 500px;
-}
+  }
 
 a {
   color: var(--primary-color);
