@@ -188,16 +188,12 @@ fieldset {
   }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 300px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media all and (max-width: 750px) {
-  .grid {
     grid-gap: 10px;
   }
+}
 
   .grid__item:last-child {
     grid-column: auto / auto;
