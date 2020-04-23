@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #af1fb8;
+  --primary-color: #2b930d;
   --secondary-color: #357b70;
   --third-color: #f08124;
   --text-color: #2b2b2b;
@@ -10,6 +10,8 @@
 
 a {
   color: var(--primary-color);
+  opacity: 0.6;
+  transition: 0.3s;
 }
 
 body {
@@ -98,8 +100,9 @@ fieldset {
 }
 
 .profile {
-  max-width: 700px;
-  margin: 0 auto;
+  width: 750px;
+  margin: 150px auto;
+  postion: relative;
 }
 
 .page__footer {
@@ -107,12 +110,21 @@ fieldset {
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-color: #2b930d;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .page-header {
   display: flex;
   width: 100%;
   padding: 20px;
+  box-shadow: 1px 1px 1px 0px black;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: white;
 }
 
 .page-header__item {
@@ -123,6 +135,12 @@ fieldset {
 .page-header__item:last-child {
   flex-grow: 1;
   text-align: right;
+}
+
+.nav-item-visited {
+  color: var(--third-color);
+  text-decoration: none;
+  opacity: 1;
 }
 
 .navigation-list {
@@ -307,4 +325,50 @@ button:focus,
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.logo {
+  width: 100px;
+}
+
+.table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding-left: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2}
+
+th {
+  background-color: #2b930d;
+  color: white;
+}
+
+input[type=text], input[type=tel], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 4px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
 }
