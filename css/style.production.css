@@ -2,7 +2,7 @@
   --primary-color: #2b930d;
   --secondary-color: #357b70;
   --third-color: #f08124;
-  --text-color: #2b2b2b;
+  --text-color: #2ec598;
   --grid-color: lightblue;
   --font-weight: 700px;
   --body-font-weight: 500px;
@@ -371,4 +371,9 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
 }
