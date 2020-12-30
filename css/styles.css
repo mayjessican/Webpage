@@ -157,10 +157,10 @@ fieldset {
   width: auto;
 }
 
-.grid__item:last-child {
-  grid-column: 3 / 3;
+/* .grid__item:last-child {
+  grid-column: 1 / 3;
   grid-row: 1 / 3;
-}
+} */
 
 @media all and (max-width: 500px) {
   .grid {
@@ -203,7 +203,6 @@ fieldset {
   h1 {
     font-size: 22px;
   }
-}
 
 .button,
 button {
